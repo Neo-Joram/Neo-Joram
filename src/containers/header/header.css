@@ -1,0 +1,134 @@
+.header{
+    display: flex;
+    padding: 1rem 2rem 2rem 3rem;
+}
+.header-things{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.header-things h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    font-size: 55px;
+    line-height: 70px;
+    letter-spacing: -0.04em;
+}
+.header-things p{
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: var(--color-text);
+    margin-top: 1.5rem;
+}
+.header-things-textarea{
+    width: 100%;
+    margin: 2rem 0 1rem;
+    display: flex;
+    flex-direction: row;
+}
+.header-things-textarea input{
+    background: var(--color-footer);
+    flex: 2; 
+    width: 100%;
+    min-height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    border: 2px solid var(--color-footer);
+    padding: 0 1rem;
+    outline: none;
+}
+.header-things-textarea button{
+    min-height: 50px;
+    background: #ff4b20;
+    border-radius:0px 5px  5px 0px;
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+    padding: 0 1rem;
+    border: none;
+}
+.header-things-followers{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+.header-things-followers img{
+    width: 181.79px;
+    height: 38px;
+}
+.header-things-followers p{
+    margin: 0 0 0 1rem;
+    font-family: var(--font-family);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 38px;
+    color: #fff;
+    text-align: center;
+}
+.header-art{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header-art img{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 1080px){
+    .header{
+        flex-direction: column;
+    }
+    .header-things h1{
+        font-size: 46px;
+        line-height: 58px;
+    }
+    .header-things p{
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .header-things-followers{
+        flex-direction: column;
+    }
+    .header-things-followers p{
+        margin: 0;
+    }
+    .header-things-textarea input,
+    .header-things-textarea button{
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+@media screen and (max-width: 550px){
+    .header{
+        padding: 1rem 1rem 1rem 1rem;
+    }
+    .header-things h1{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .header-things p{
+        font-size: 14px;
+        line-height: 23px;
+    }
+    .header-things-textarea input,
+    .header-things-textarea button{
+        font-size: 13px;
+        line-height: 16px;
+    }
+}

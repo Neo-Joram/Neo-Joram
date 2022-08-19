@@ -1,0 +1,63 @@
+.zenom-self{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    background: var(--color-footer);
+    margin: 0 6rem;
+    background:-moz-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:-webkit-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:-o-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:-ms-radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    background:radial-gradient(circle at 3% 25%, rgba(0, 40, 83, 1) 0%, rgba(4, 12, 24, 1) 100%);
+    filter: drop-shadow(0px 4px 4px rgba(0,0,0,0.50));
+}
+.zenom-self-feature {
+    display: flex;
+}
+.zenom-self-feature .zenom-features-container-feature{
+    margin: 0;
+}
+.zenom-self-feature .zenom-features-container-feature-text{
+    max-width: 700px;
+}
+.zenom-self-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 4rem 0 2rem;
+}
+.zenom-self-heading h1{
+    font-family: var(--font-family);
+    font-weight: 800;
+    max-width: 510px;
+    font-size: 34px;
+    line-height: 45px;
+}
+.zenom-self-heading p{
+    font-family: var(--font-family);
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-subtext);
+    cursor: pointer;
+}
+.zenom-self-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 2rem;
+}
+@media screen and (max-width: 650px ){
+    .zenom-self-feature .zenom-features-container-feature{
+        flex-direction: column;
+    }
+    .zenom-self-feature .zenom-features-container-feature-text{
+        margin-top: 0.5rem;
+    }
+    .zenom-self-heading h1{
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
